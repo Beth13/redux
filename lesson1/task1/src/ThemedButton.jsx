@@ -5,6 +5,7 @@ class ThemedButton extends Component {
   render() {
     return (
       <button
+        className="btn"
         {...this.props}
         style={{
           backgroundColor: this.context.background,
