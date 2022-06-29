@@ -4,7 +4,7 @@ import { themes, ThemeContext } from "./themes-context.js";
 
 class App extends Component {
   state = {
-    theme: themes.dark,
+    theme: themes.light,
   };
 
   toogleTheme = () => {
