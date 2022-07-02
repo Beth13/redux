@@ -1,15 +1,19 @@
-export const userReducer = (state = { userList: [] }, action) => {
+const initialState = {
+  usersList: [],
+};
+
+export const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADDUser":
       return {
         ...state,
-        userList: state.userList.concat(action.payload),
+        usersList: state.usersList.concat(action.payload),
       };
 
     case "DELETEUser":
       return {
         ...state,
-        userList: state.userList.filter(
+        usersList: state.usersList.filter(
           (user) => user.id !== action.payload.id
         ),
       };
