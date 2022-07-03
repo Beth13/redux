@@ -1,17 +1,11 @@
 const usersReducer = (state = null, action) => {
   switch (action.type) {
-    case "ADD_USER": {
-      return {
-        ...state,
-        user: action.payload,
-      };
+    case "USER/SET": {
+      return action.payload.userData;
     }
 
-    case "DELETE_USER": {
-      return {
-        ...state,
-        user: null,
-      };
+    case "USER/REMOVE": {
+      return null;
     }
 
     default:
