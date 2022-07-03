@@ -1,13 +1,9 @@
-const initialState = {
-  user: null,
-};
-
-const usersReducer = (state = initialState, action) => {
+const usersReducer = (state = null, action) => {
   switch (action.type) {
     case "ADD_USER": {
       return {
         ...state,
-        user: action.payload.name,
+        user: action.payload,
       };
     }
 

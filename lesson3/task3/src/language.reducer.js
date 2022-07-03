@@ -1,8 +1,4 @@
-const initialState = {
-  language: "en",
-};
-
-const languageReducer = (state = initialState, action) => {
+const languageReducer = (state = "en", action) => {
   switch (action.type) {
     case "LANGUAGE/SET": {
       return {

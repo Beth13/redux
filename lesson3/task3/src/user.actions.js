@@ -1,4 +1,4 @@
-export const setUser = ({ name }) => {
+export const setUser = (name) => {
   return {
     type: "ADD_USER",
     payload: { name },
